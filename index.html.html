@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Studio Andreia Caldeira</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+/* FUNDO COM LOGO */
+body {
+  margin: 0;
+  font-family: Arial;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("imagens/logo.png") no-repeat center;
+  background-size: 900px;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #ac529d, #761783);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 38px;
+  font-family: Playfair Display, serif;
+  letter-spacing: 1px;
+}
+
+/* SEÇÕES */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* SERVIÇOS */
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25D366;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* CARROSSEL LUXO */
+.carrossel {
+  width: 280px;
+  height: 380px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* BOLINHAS */
+.bolinhas {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.bolinhas span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.bolinhas .ativo {
+  background: #fff;
+  transform: scale(1.3);
+}
+
+/* DEPOIMENTOS */
+.depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dep {
+  background: #f1f1f1;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 250px;
+}
+
+/* MAPA */
+iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* RODAPÉ */
+footer {
+  background: #701b62;
+  color: white;
+  padding: 15px;
+}
+
+/* BOTÃO WHATSAPP */
+.zap-absurdo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #25D366, #1ebe5d);
+  color: white;
+  padding: 15px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.zap-absurdo:hover {
+  transform: scale(1.1);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Studio Andreia Caldeira</h1>
+  <p>✨ Transforme seu visual hoje e se sinta ainda mais linda 💎</p>
+  <p style="color:red; font-weight:bold;">⚠️ Agenda aberta, agende seu horário!</p>
+</header>
+
+<section>
+  <h2>💎 Serviços</h2>
+
+  <div class="servicos">
+
+    <div class="card">
+      <h3>MEGA HAIR AMARRADINHO NÓ ITALIANO</h3>
+      <p>A partir de R$180</p>
+      <a href="https://wa.me/5531985607093?text=Quero%20Mega%20Hair">Agendar</a>
+    </div>
+
+    <div class="card">
+        <h3>TELA PONTO AMERICANO</h3>
+        <p>A partir de R$50  cada tela</p>
+        <a href="https://wa.me/5531985607093?text=Quero%20Mega%20Hair">Agendar</a>
+    </div>
+
+    <div class="card">
+        <h3> ENTRELECE</h3>
+        <p>A partir de R$200</p>
+        <a href="https://wa.me/5531985607093?text=Quero%20Mega%20Hair">Agendar</a>
+    </div>
+
+    <div class="card">
+        <h3>CROCHET BRAIDS</h3>
+        <p>A partir de R$180</p>
+        <a href="https://wa.me/5531985607093?text=Quero%20Mega%20Hair">Agendar</a>
+    </div>
+
+    <div class="card">
+      <h3>BOX BRAIDS</h3>
+      <p>A partir de R$200</p>
+      <a href="https://wa.me/5531985607093?text=Quero%20Boho%20Braids">Agendar</a>
+    </div>
+
+    <div class="card">
+        <h3>BOHO BRAIDS (TRANÇAS COM CACHOS SEM JUMBO)</h3>
+        <p>A partir de R$180</p>
+        <a href="https://wa.me/5531985607093?text=Quero%20Box%20Braids">Agendar</a>
+    </div>
+
+    <div class="card">
+        <h3>GYPSY BRAIDS (TRANÇAS COM JUMBO E CACHOS)</h3>
+        <p>A partir de R$180</p>
+        <a href="https://wa.me/5531985607093?text=Quero%20Box%20Braids">Agendar</a>
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+  <h2>📸 Trabalhos</h2>
+
+  <div class="carrossel">
+    <div class="slides">
+    <img src="imagens/foto 1.jpg" class="slide ativo">
+    <img src="imagens/foto 5 (16).jpg" class="slide">
+    <img src="imagens/foto 5 (19).jpg" class="slide">
+    <img src="imagens/foto 5 (18).jpg" class="slide">
+    <img src="imagens/foto 5 (9).jpg" class="slide">
+    <img src="imagens/foto 5 (8).jpg" class="slide">
+    <img src="imagens/foto 5 (7).jpg" class="slide">
+    </div>
+    <div class="bolinhas"></div>
+  </div>
+
+</section>
+
+<section>
+  <h2>💬 Depoimentos</h2>
+
+  <div class="depoimentos">
+    <div class="dep">“Nunca recebi tantos elogios 😍”</div>
+    <div class="dep">“Meu cabelo ficou perfeito 💕”</div>
+    <div class="dep">“Atendimento impecável 👑”</div>
+  </div>
+
+</section>
+
+<section>
+  <h2 style="text-align: center;">📍 Localização</h2>
+<div style="text-align: center;">
+    <iframe src="https://www.google.com/maps?q=Rua Alexandre Mathias Alves, 47, Belo Horizonte&output=embed"
+        style="width: 320px; height: 240px; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+    </iframe>
+</div>
+
+</section>
+
+<footer>
+    <p style="text-align: center;">© 2026 Studio Andreia Caldeira</p>
+</footer>
+
+<a class="zap-absurdo" href="https://wa.me/5531985607093?text=Oi%20vim%20pelo%20site%20e%20quero%20agendar%20✨" target="_blank">
+💬 Agendar Agora
+</a>
+
+<script>
+let index = 0;
+const slides = document.querySelector(".slides");
+const imagens = document.querySelectorAll(".slides img");
+const bolinhas = document.querySelector(".bolinhas");
+
+imagens.forEach((_, i) => {
+  let span = document.createElement("span");
+  if(i === 0) span.classList.add("ativo");
+
+  span.onclick = () => {
+    index = i;
+    atualizar();
+  };
+
+  bolinhas.appendChild(span);
+});
+
+function atualizar() {
+  slides.style.transform = `translateX(-${index * 100}%)`;
+
+  document.querySelectorAll(".bolinhas span")
+    .forEach(b => b.classList.remove("ativo"));
+
+  bolinhas.children[index].classList.add("ativo");
+}
+
+function autoSlide() {
+  index++;
+  if(index >= imagens.length) index = 0;
+  atualizar();
+}
+
+setInterval(autoSlide, 3000);
+</script>
+
+</body>
+</html>
